@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Shop — JP Cosmetics & Fragrance</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <h1>JP Cosmetics & Fragrance</h1>
+      <p class="tagline">Glow Naturally, Smell Heavenly.</p>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button id="view-cart-btn" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="shop" class="shop container">
+    <h3 class="section-title">Shop</h3>
+    <div class="categories">
+      <button class="cat-btn active" data-cat="all">All</button>
+      <button class="cat-btn" data-cat="Body Care">Body Care</button>
+      <button class="cat-btn" data-cat="Face Care">Face Care</button>
+      <button class="cat-btn" data-cat="Fragrance">Fragrance</button>
+    </div>
+
+    <div id="product-grid" class="product-grid"></div>
+  </section>
+</main>
+
+<!-- CART MODAL -->
+<div id="cart-modal" class="cart-modal hidden">
+  <div class="cart-panel">
+    <button id="close-cart" class="close-x">✕</button>
+    <h4>Your Cart</h4>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: ₦<span id="cart-total">0</span></div>
+      <div class="cart-actions">
+        <button id="clear-cart" class="secondary">Clear</button>
+        <button id="checkout-whatsapp" class="primary">Checkout on WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© JP Cosmetics & Fragrance — Sapele, Okirigwe — WhatsApp: +234 708 780 4491</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

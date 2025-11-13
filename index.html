@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>JP Cosmetics & Fragrance</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <h1>JP Cosmetics & Fragrance</h1>
+      <p class="tagline">Glow Naturally, Smell Heavenly.</p>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button id="view-cart-btn" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>Your Glow Starts Here</h2>
+        <p>Premium body creams, scrubs, face care and fragrances — order easily on WhatsApp.</p>
+        <a class="cta" href="shop.html">Shop Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/stives_rose_argan_lotion.jpg" alt="Self care" />
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h3 class="section-title">Shop by Category</h3>
+    <div style="display:flex;gap:12px;margin-top:12px">
+      <a href="shop.html#body" style="padding:12px 18px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none">Body Care</a>
+      <a href="shop.html#face" style="padding:12px 18px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none">Face Care</a>
+      <a href="shop.html#fragrance" style="padding:12px 18px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none">Fragrance</a>
+    </div>
+  </section>
+
+  <section class="container" style="margin-top:26px">
+    <h3 class="section-title">Featured Products</h3>
+    <div id="product-grid" class="product-grid"></div>
+  </section>
+
+</main>
+
+<!-- CART MODAL -->
+<div id="cart-modal" class="cart-modal hidden">
+  <div class="cart-panel">
+    <button id="close-cart" class="close-x">✕</button>
+    <h4>Your Cart</h4>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: ₦<span id="cart-total">0</span></div>
+      <div class="cart-actions">
+        <button id="clear-cart" class="secondary">Clear</button>
+        <button id="checkout-whatsapp" class="primary">Checkout on WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© JP Cosmetics & Fragrance — Sapele, Okirigwe — WhatsApp: +234 708 780 4491</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
